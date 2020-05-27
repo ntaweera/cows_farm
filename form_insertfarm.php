@@ -4,7 +4,7 @@
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
         $phone_no = $_POST['phone_no'];
-        $password = $_POST['password'];
+        $password = password_hash($_POST['password'], PASSWORD_ARGON2ID);
         $sql = "INSERT INTO farm (firstname, lastname, phone_no, password) 
         VALUES (?, ?, ?, ?)";
         $stmt= $conn->prepare($sql);
@@ -24,10 +24,10 @@
     <h2>ง่ายและเร็ว</h2>
     <form action="" method="post">
         <br>
-        <input type="text" name="firstname" placeholder="ชื่อ">
-        <input type="text" name="lastname" placeholder="นามสกุล">
+        <input type="text" name="firstname" placeholder="ชื่อ" required>
+        <input type="text" name="lastname" placeholder="นามสกุล" required>
         <br><br>
-        <input type="text" name="phone_no" placeholder="หมายเลขโทรศัพท์">
+        <input type="text" name="phone_no" placeholder="หมายเลขโทรศัพท์" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
         <br><br>
         <input type="password" name="password" placeholder="รหัสผ่านใหม่">
         <input type="hidden"  name="submit"> 

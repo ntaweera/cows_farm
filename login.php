@@ -1,7 +1,7 @@
 <?php
 require_once 'db.php';
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = password_hash($_POST['password'], PASSWORD_ARGON2ID);
 $sql = "SELECT username, password, farm_id, owner_name FROM farm WHERE username = ? AND password = ?";
 $statement = $connection->prepare($sql);
 $statement->execute([$username,$password]);

@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     require_once "db.php";
     $owner_name = $_POST['owner_name'];
     $phone_no = $_POST['phone_no'];
-    $password = $_POST['password'];
+    $password = password_hash($_POST['password'], PASSWORD_ARGON2ID) ;
     $sql = "INSERT INTO farm (owner_name, phone_no, password, username) 
     VALUES(:owner_name, :phone_no, :password, :username)";   
     $statement = $connection->prepare($sql);
