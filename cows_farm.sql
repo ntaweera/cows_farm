@@ -1,22 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 26, 2020 at 02:32 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.2
+-- Host: localhost:8889
+-- Generation Time: May 28, 2020 at 05:44 AM
+-- Server version: 5.7.26
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `cows_farm`
@@ -157,18 +149,18 @@ CREATE TABLE `farm` (
 --
 
 INSERT INTO `farm` (`farm_id`, `farm_name`, `owner_name`, `address1`, `address2`, `phone_no`, `line_id`, `facebook`, `username`, `password`) VALUES
-(1, '', 'สมชาย', '', '', '654678907', '', '', '654678907', '4667889999'),
-(28, '', 'Taweerat Nualchuay', '', '', '074312726', '', '', '074312726', '3545353'),
-(29, '', 'Taweerat Nualchuay', '', '', 'test', '', '', 'test', '1234'),
-(31, '', 'wrerewre', '', '', 'sdfsfds', '', '', 'sdfsfds', 'rewrewr'),
-(37, '', 'Test Test2', '', '', '112321324', '', '', '112321324', '435435435345435'),
-(39, '', 'Twqeqweqw', '', '', 'wrwerewr', '', '', 'wrwerewr', 'wqrewrewrew'),
-(41, '', '12312', '', '', 'wrewrewr', '', '', 'wrewrewr', 'rfwerewrter'),
-(43, '', '876876', '', '', 'rtuytrutyu', '', '', 'rtuytrutyu', 'fhtrtyuty'),
-(44, 'สมศักดิ์ฟาร์มวัวเนื้อ', 'สมศักดิ์', '160 Kanjanawanitch Rd.', 'Tumbol Khoroupchang', '0891234556', '0816982565', 'ntaweera', '0891234556', '5435345345346456'),
-(45, '', 'สมชาย แซ่ตั้ง', '', '', '1231232134', '', '', '1231232134234', 'qwewqewrewr'),
-(47, 'สมศักดิ์ฟาร์มวัวเนื้อ', '756756', '160 Kanjanawanitch Rd.', 'Tumbol Khoroupchang', '6546576576', '0816982565', '', '654657657656', '57788900'),
-(48, 'สมศักดิ์ฟาร์มวัวเนื้อ', 'Taweerat Nualchuay', '160 Kanjanawanitch Rd.', 'Tumbol Khoroupchang', '074312765', '0816982565', 'ntaweera', '074312765', '21354789');
+(1, '', 'สมชาย', '', '', '654678907', '', '', '654678907', '$2y$10$eKMP.lzJyGpPNcj7f3eAy.ztFCa7dYjgK1z1.rNvY4JFR2RpSMYbS'),
+(28, '', 'Taweerat Nualchuay', '', '', '074312726', '', '', '074312726', '$2y$10$dSjbi34SfulphkS51/iVVu5I3JNCX.mOf85P0th5oY2NAJvZvQR0.'),
+(29, '', 'Taweerat Nualchuay', '', '', 'test', '', '', 'test', '$2y$10$fo6tCMDOyYk54Es1An0RKejpxuuqr5kYUY3G91mXm71FAsQVse6fm'),
+(31, '', 'wrerewre', '', '', 'sdfsfds', '', '', 'sdfsfds', '$2y$10$xu2efivEfiNWnoXtBt7GD.p1UGB.3uWME8JDFHA6EsZ9iVbGCeZd.'),
+(37, '', 'Test Test2', '', '', '112321324', '', '', '112321324', '$2y$10$HQnYS0KPHAK/6M8F53LfQOxeuZlfX5FTGfQIMDXsJQ926xp9p9IKy'),
+(39, '', 'Twqeqweqw', '', '', 'wrwerewr', '', '', 'wrwerewr', '$2y$10$9RrjTyUvB593puBTxO5sHubo7LrdonK.OfuyzzE0wZL4B/4qGrUW2'),
+(41, '', '12312', '', '', 'wrewrewr', '', '', 'wrewrewr', '$2y$10$gACZSFs68RXf9EKbw57vAeBNzkc6J5uIufEtMQnMMj.Cb021zfUSu'),
+(43, '', '876876', '', '', 'rtuytrutyu', '', '', 'rtuytrutyu', '$2y$10$9ipX7cphLmnRTOG6baoVgOJj5YD9SFN6mSGrFjY72p13/L8jGXthO'),
+(44, 'สมศักดิ์ฟาร์มวัวเนื้อ', 'สมศักดิ์', '160 Kanjanawanitch Rd.', 'Tumbol Khoroupchang', '0891234556', '0816982565', 'ntaweera', '0891234556', '$2y$10$luqkoVyIgoM3NZpoAS9SAucT7fNVxNqFVLkFISuFVidOdASDLDn52'),
+(45, '', 'สมชาย แซ่ตั้ง', '', '', '1231232134', '', '', '1231232134234', '$2y$10$dQlX3YDPT/12a7oNqe0uj.aj.YOqaoBMgGtQxI3zlDedkcuVnnONi'),
+(47, 'สมศักดิ์ฟาร์มวัวเนื้อ', '756756', '160 Kanjanawanitch Rd.', 'Tumbol Khoroupchang', '6546576576', '0816982565', '', '654657657656', '$2y$10$FIat.UdGzAafrS4ZbwFIvuWq9Hrhep.aW7a0YhXYXJ9hy2ZjFOUee'),
+(48, 'สมศักดิ์ฟาร์มวัวเนื้อ', 'Taweerat Nualchuay', '160 Kanjanawanitch Rd.', 'Tumbol Khoroupchang', '074312765', '0816982565', 'ntaweera', '074312765', '$2y$10$eeNPKlnat9y00Ffo4B3Qku5VhJKEMdjlf8F5GhzctisUCKFXs32EO');
 
 --
 -- Indexes for dumped tables
@@ -232,8 +224,3 @@ ALTER TABLE `breeding_method`
 --
 ALTER TABLE `farm`
   MODIFY `farm_id` int(3) NOT NULL AUTO_INCREMENT COMMENT 'รหัสพนักงาน', AUTO_INCREMENT=49;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
