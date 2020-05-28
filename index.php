@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     require_once "db.php";
     $owner_name = $_POST['owner_name'];
     $phone_no = $_POST['phone_no'];
-    $password = password_hash($_POST['password'], PASSWORD_ARGON2ID) ;
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT) ;
     $sql = "INSERT INTO farm (owner_name, phone_no, password, username) 
     VALUES(:owner_name, :phone_no, :password, :username)";   
     $statement = $connection->prepare($sql);
@@ -26,7 +26,11 @@ if(isset($_POST['submit'])){
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-md"></div>
+        <div class="col-md">
+            <form action="hash.php" method="get">
+                <button type="submit" class="btn btn-success">Hash all</button>
+            </form>
+        </div>
         <div class="col-md">
             <div class="card mt-5">
                 <div class="card-header">สมัครง่ายและเร็ว</div>
