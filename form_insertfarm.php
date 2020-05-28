@@ -4,7 +4,7 @@
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
         $phone_no = $_POST['phone_no'];
-        $password = password_hash($_POST['password'], PASSWORD_ARGON2ID);
+        $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
         $sql = "INSERT INTO farm (firstname, lastname, phone_no, password) 
         VALUES (?, ?, ?, ?)";
         $stmt= $conn->prepare($sql);
