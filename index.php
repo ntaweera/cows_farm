@@ -50,7 +50,7 @@ if(isset($_POST['submit'])){
                         <div class="form-group">
                             <input id="pw2" type="password" class="form-control" name="password2" placeholder="ยืนยันรหัสผ่าน" required>
                         </div>
-                            <button type="submit" class="btn btn-info btn-block">สมัครสมาชิก</button>          
+                            <button type="submit" class="btn btn-primary btn-block">สมัครสมาชิก</button>          
                     </form>
                 </div>
         </div>

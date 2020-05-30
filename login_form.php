@@ -12,7 +12,7 @@
         <form action="login.php" method="post">
           <input type="text" name="username" placeholder="ชื่อผู้ใช้" required>
           <input type="password" name="password" placeholder="รหัสผ่าน" required>
-          <input type="submit" value="ลงชื่อเข้าใช้" class="btn btn-info">
+          <input type="submit" value="ลงชื่อเข้าใช้" class="btn btn-outline-primary">
         </form>
       </li>
     </ul>
