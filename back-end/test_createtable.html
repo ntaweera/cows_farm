@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+  <title>Smart farm System</title>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+<form action="crud.php" method="POST">
+    <input type ="hidden" name="action" value="create_table">
+    <input type="submit" value="Create Table">
+
+</form>
+<form action="crud.php" method="POST">
+    <input type="hidden" name="action" value="fetch_data">
+    <input type="submit" value="Show Data">
+</form>
+<div>
+<form action="crud.php" method="POST">
+    <input type="hidden" name="action" value="add_data">
+    <div>
+        <input type="text" name="owner_name" placeholder="ชื่อ นามสกุล">
+    </div>
+    <div>
+        <input type="text" name="phone_no" placeholder="หมายเลขโทรศัพท์">
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="รหัสผ่าน">
+    </div>
+    <div>
+        <input type="submit" value="Add Data">
+    </div>
+</form>
+</div>
+<div>
+<form action="crud.php" method="POST">
+    <input type="hidden" name="action" value="delete_data">
+    <input type="text" name="farm_id">
+    <input type="submit" value="Delete Data">
+</form>
+
+<form action="crud.php" method="POST">
+    <input type="hidden" name="action" value="update_data">
+    <input type="text" name="farm_id">
+    <div>
+        <input type="text" name="owner_name" placeholder="ชื่อ นามสกุล">
+    </div>
+    <div>
+        <input type="text" name="phone_no" placeholder="หมายเลขโทรศัพท์">
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="รหัสผ่าน">
+    </div>
+    <input type="submit" value="Update Data">
+</form>
+
+
+
+</div>
+
+</body>
+</html>
